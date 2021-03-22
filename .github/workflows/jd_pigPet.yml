@@ -34,7 +34,7 @@ jobs:
           node jd_shop.js
           node jd_kd.js
           node jd_daily_egg.js
-          node jd_pigPetNew.js
+          node jd_pigPet.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
