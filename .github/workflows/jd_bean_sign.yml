@@ -6,9 +6,9 @@ name: jd_bean_sign
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 4,16 * * *'
+    - cron: '59 15,22 * * *'
   watch:
-    types: started
+    types: [started]
   repository_dispatch:
     types: bean_sgin
 jobs:

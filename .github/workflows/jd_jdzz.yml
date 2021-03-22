@@ -6,7 +6,7 @@ name: jd_jdzz
 on:
   workflow_dispatch:
   schedule:
-    - cron: '20 16 * * *'
+    - cron: '0 */8 * * *'
   watch:
     types: [started]
   repository_dispatch:
@@ -32,6 +32,7 @@ jobs:
         run: |
           cd ~/scripts
           node jd_jdzz.js
+          node jd_ra.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
